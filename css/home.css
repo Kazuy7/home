@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+/* ---------- Paleta de cores ---------- */
+:root {
+    --color1: #12122b;
+    --color2: #383845;
+    --color3: #5e5e5e;
+    --color4: #848478;
+    --color5: #aaaa91;
+}
+/* ---------- Paleta de cores ---------- */
+
+/* ---------- Regras gerais ---------- */
+* {
+    font-family: var(url);
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+li, ul, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: var(--color1);
+}
+
+html {
+    font-family: 'SUSE';
+    /* background-color: var(--color3); */
+    background-image: linear-gradient(to bottom right, var(--color3), var(--color1));
+    color: var(--color7);
+    padding: 70px;
+}
+
+body {
+    /* background-color: var(--color4); */
+    min-height: 80vh;
+    border-radius: 5px;
+    color: var(--color1);
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+}
+/* ---------- Regras gerais ---------- */
+
+/* ---------- Header ---------- */
+.content-nav {
+    background-color: var(--color4);
+    width: 70%;
+    border-radius: 10px 0 0;
+    /* border: 1px solid white; */
+}
+
+.perfil-image {
+    /* border: 1px solid white; */
+    width: auto;
+}
+
+header, li {
+    display: flex;
+}
+
+.nav-box {
+    margin: 10px 0;
+}
+
+.present-box {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 30vh;
+    width: 20vh;
+    /* background-color: var(--color3); */
+    /* border: 1px solid yellow; */
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.end-bg {
+    width: 20%;
+    border-radius: 0 10px 0 0;
+    background-color: var(--color4);
+    /* border: 1px solid white; */
+}
+/* ---------- Header ---------- */
+
+
+main, footer {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color4);
+}
+
