@@ -28,7 +28,7 @@ a {
 html {
     font-family: 'SUSE';
     /* background-color: var(--color3); */
-    background-image: linear-gradient(to bottom right, var(--color3), var(--color1));
+    /* background-image: linear-gradient(to bottom right, var(--color3), var(--color1)); */
     color: var(--color7);
     padding: 70px;
 }
@@ -56,7 +56,7 @@ body {
 /* ---------- Header ---------- */
 .content-nav {
     background-color: var(--color4);
-    width: 70%;
+    width: 80%;
     border-radius: 10px 0 0;
     /* border: 1px solid white; */
 }
@@ -97,7 +97,7 @@ header, li {
 }
 
 .end-bg {
-    width: 20%;
+    width: 15%;
     border-radius: 0 10px 0 0;
     background-color: var(--color4);
     /* border: 1px solid white; */
@@ -110,5 +110,9 @@ main, footer {
     display: flex;
     align-items: center;
     background-color: var(--color4);
+}
+
+footer {
+    border-radius: 0 0 10px 10px;
 }
 
