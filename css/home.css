@@ -104,7 +104,6 @@ header, li {
 }
 /* ---------- Header ---------- */
 
-
 main, footer {
     min-height: 20vh;
     display: flex;
@@ -112,7 +111,41 @@ main, footer {
     background-color: var(--color4);
 }
 
-footer {
+/* ---------- Footer ---------- */
+.end-bg {
+    display: flex;
+    align-items: center;
+}
+/* footer {
     border-radius: 0 0 10px 10px;
 }
+
+.rodape-box {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.icon {
+    margin: 0;
+}
+
+.zoom-rodape {
+    transition: transform .2s;
+}
+
+.zoom-rodape:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    color: #ffc107;
+} */
+/* ---------- Footer ---------- */
 

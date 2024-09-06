@@ -1,55 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+// Definir o template do componente
+const template = document.createElement('template');
+template.innerHTML = `
+  <style>
+    footer {
+    border-radius: 0 0 10px 10px;
+    background-color: #848478;
+    }
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/home.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
-    <!-- <link rel="icon" type="image/x-icon" href="img/?"> -->
-</head>
+    .rodape-box {
+        min-height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 
-<body>
-    <video autoplay muted loop id="video-background">
-        <source src="assets/geometric-dark.mp4">
-    </video>
+    .icon a {
+        text-decoration: none;
+        color: var(--color1);
+    }
 
-    <header>
-        <section class="content-nav">
-            <div class="nav-box">
-                <nav>
-                    <li>
-                        <ul><a href="">PROJETOS</a></ul>
-                        <ul><a href="">CURSOS</a></ul>
-                        <ul><a href="">CURRÍCULO</a></ul>
-                    </li>
-                </nav>
-            </div>
-            <div class="present-box">
-                <h1>Lucas Silva</h1>
-                <p>Sejá bem-vindo ao meu portfólio.</p>
-            </div>
-        </section>
+    .icon {
+        margin: 0;
+    }
 
-        <section class="perfil-image">
-            <div class="img-box">
-                <img src="assets/eu-violao-nobg.png">
-            </div>
-        </section>
+    .zoom-rodape {
+        transition: transform .2s;
+    }
 
-        <section class="end-bg">
-            <footer-component class="footer-component"></footer-component>
-        </section>
-    </header>
-
-    <main>
-        <section class="container">
-            <h1 class="color1">Main</h1>
-        </section>
-    </main>
-
-    <!-- <footer class="rodape-box">
+    .zoom-rodape:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: #ffc107;
+    }
+  </style>
+  <footer class="rodape-box">
 
         <section class="rodape-box">
 
@@ -107,12 +94,21 @@
 
         </section>
 
-    </footer> -->
+    </footer>
+`;
 
-    <!-- <footer-component></footer-component> -->
+// Criar a classe do componente
+class HelloWorld extends HTMLElement {
+    constructor() {
+        super(); // Sempre chame super() primeiro
 
-    <script src="js/home.js"></script>
-    <script src="components/footer.js"></script>
-</body>
+        // Adicionar o shadow DOM para encapsulamento
+        this.attachShadow({ mode: 'open' });
 
-</html>
+        // Anexar o conteúdo do template ao shadow DOM
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
+    }
+}
+
+// Definir o elemento customizado
+customElements.define('footer-component', HelloWorld);
