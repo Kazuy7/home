@@ -6,8 +6,10 @@
     --color3: #5e5e5e;
     --color4: #848478;
     --color5: #aaaa91;
+    --color6: #ffc107;
 }
 /* ---------- Paleta de cores ---------- */
+
 
 /* ---------- Regras gerais ---------- */
 * {
@@ -25,6 +27,10 @@ a {
     color: var(--color1);
 }
 
+a:hover {
+    color: var(--color6);
+}
+
 html {
     font-family: 'SUSE';
     /* background-color: var(--color3); */
@@ -34,39 +40,27 @@ html {
 }
 
 body {
-    /* background-color: var(--color4); */
     min-height: 80vh;
     border-radius: 5px;
     color: var(--color1);
 }
-
-#video-background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    background-size: cover;
-}
 /* ---------- Regras gerais ---------- */
+
 
 /* ---------- Header ---------- */
 .content-nav {
     background-color: var(--color4);
-    width: 80%;
+    width: 85%;
     border-radius: 10px 0 0;
     /* border: 1px solid white; */
 }
 
 .perfil-image {
-    /* border: 1px solid white; */
     width: auto;
+    /* border: 1px solid white; */
 }
 
-header, li {
+.content, li {
     display: flex;
 }
 
@@ -97,55 +91,76 @@ header, li {
 }
 
 .end-bg {
-    width: 15%;
+    width: 10%;
     border-radius: 0 10px 0 0;
     background-color: var(--color4);
     /* border: 1px solid white; */
 }
+
+.range {
+    width: 100%;
+    height: 30px;
+    background-color: var(--color4);
+}
 /* ---------- Header ---------- */
 
-main, footer {
-    min-height: 20vh;
+
+/* ---------- Main ---------- */
+main {
+    /* margin-top: 30px; */
+    min-height: 30vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: var(--color4);
 }
+
+.center-content {
+    display: flex;
+}
+
+.professional-characteristics, .professional-path {
+    width: 49%;
+}
+
+.card {
+    border-radius: 5px 5px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    padding: 20px;
+    background-color: var(--color1);
+    color: var(--color4);
+    cursor: pointer;
+}
+
+.card-content {
+    background-color: var(--color2);
+    color: var(--color5);
+    max-height: 0;
+    transition: max-height 0.9s ease;
+}
+
+.card-content p {
+    padding: 10px 20px;
+}
+
+.card.active .card-content {
+    max-height: 200px; /* Defina um valor suficiente para o conteúdo. */
+    padding: 0 10px; /* Ajuste o padding ao expandir */
+}
+/* ---------- Main ---------- */
+
 
 /* ---------- Footer ---------- */
 .end-bg {
     display: flex;
     align-items: center;
 }
-/* footer {
-    border-radius: 0 0 10px 10px;
-}
-
-.rodape-box {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.icon a {
-    text-decoration: none;
-    color: var(--color1);
-}
-
-.icon {
-    margin: 0;
-}
-
-.zoom-rodape {
-    transition: transform .2s;
-}
-
-.zoom-rodape:hover {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    color: #ffc107;
-} */
 /* ---------- Footer ---------- */
 

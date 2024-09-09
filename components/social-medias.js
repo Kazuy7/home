@@ -1,19 +1,19 @@
 // Definir o template do componente
-const footerTemplate = document.createElement('template');
-footerTemplate.innerHTML = `
+const smTemplate = document.createElement('template');
+smTemplate.innerHTML = `
   <style>
     footer {
     border-radius: 0 0 10px 10px;
     background-color: #848478;
-    // margin-top: 30px;
     }
 
     .rodape-box {
-        min-height: 10vh;
+        min-height: 20vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 40px;
     }
 
     .icon a {
@@ -36,7 +36,6 @@ footerTemplate.innerHTML = `
         color: #ffc107;
     }
   </style>
-  
   <footer class="rodape-box">
 
         <section class="rodape-box">
@@ -99,7 +98,7 @@ footerTemplate.innerHTML = `
 `;
 
 // Criar a classe do componente
-class Footer extends HTMLElement {
+class SocialMedia extends HTMLElement {
     constructor() {
         super(); // Sempre chame super() primeiro
 
@@ -107,9 +106,9 @@ class Footer extends HTMLElement {
         this.attachShadow({ mode: 'open' });
 
         // Anexar o conteúdo do template ao shadow DOM
-        this.shadowRoot.appendChild(footerTemplate.content.cloneNode(true));
+        this.shadowRoot.appendChild(smTemplate.content.cloneNode(true));
     }
 }
 
 // Definir o elemento customizado
-customElements.define('footer-component', Footer);
+customElements.define('sm-component', SocialMedia);
