@@ -16,7 +16,7 @@ backgroundTemplate.innerHTML = `
   </style>
   
     <video autoplay muted loop id="video-background">
-    <source src="assets/geometric-dark.mp4" />
+    <source src="asset/geometric-dark.mp4" />
     </video>
 `;
 

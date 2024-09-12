@@ -1,166 +1,251 @@
-@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 /* ---------- Paleta de cores ---------- */
 :root {
-    --color1: #12122b;
-    --color2: #383845;
-    --color3: #5e5e5e;
-    --color4: #848478;
-    --color5: #aaaa91;
-    --color6: #ffc107;
+  --color1: #12122b;
+  --color2: #383845;
+  --color3: #5e5e5e;
+  --color4: #848478;
+  --color5: #aaaa91;
+  --color6: #ffc107;
 }
 /* ---------- Paleta de cores ---------- */
-
 
 /* ---------- Regras gerais ---------- */
 * {
-    font-family: var(url);
-    margin: 0 auto;
-    padding: 0 auto;
+  font-family: var(url);
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
-li, ul, a {
-    text-decoration: none;
-    list-style: none;
-}
-
+li,
+ul,
 a {
-    color: var(--color1);
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+h1 {
+  color: white;
 }
 
 a:hover {
-    color: var(--color6);
+  color: var(--color6);
 }
 
 html {
-    font-family: 'SUSE';
-    /* background-color: var(--color3); */
-    /* background-image: linear-gradient(to bottom right, var(--color3), var(--color1)); */
-    color: var(--color7);
-    padding: 70px;
+  font-family: "Orbitron";
+  letter-spacing: 1px;
+  /* background-color: var(--color3); */
+  /* background-image: linear-gradient(to bottom right, var(--color3), var(--color1)); */
+  color: var(--color7);
+  padding: 70px 200px;
 }
 
 body {
-    min-height: 80vh;
-    border-radius: 5px;
-    color: var(--color1);
+  min-height: 80vh;
+  border-radius: 5px;
+  color: var(--color1);
 }
 /* ---------- Regras gerais ---------- */
 
-
 /* ---------- Header ---------- */
+header {
+  display: flex;
+}
+
+header a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.name-box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+
+.name {
+  width: 100%;
+  font-size: 30px;
+}
+
 .content-nav {
-    background-color: var(--color4);
-    width: 85%;
-    border-radius: 10px 0 0;
-    /* border: 1px solid white; */
+  /* background-color: var(--color4); */
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
 
-.perfil-image {
-    width: auto;
-    /* border: 1px solid white; */
+li {
+  display: flex;
+  gap: 30px;
 }
 
-.content, li {
+ul a {
     display: flex;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+ul img {
+    padding-right: 10px;
+    filter: invert(100%);
 }
 
 .nav-box {
-    margin: 10px 0;
-}
-
-.present-box {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 90%;
-}
-
-.img-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    min-height: 30vh;
-    width: 20vh;
-    /* background-color: var(--color3); */
-    /* border: 1px solid yellow; */
-}
-
-.img-box img{
-    width: 100%;
-}
-
-.end-bg {
-    width: 10%;
-    border-radius: 0 10px 0 0;
-    background-color: var(--color4);
-    /* border: 1px solid white; */
-}
-
-.range {
-    width: 100%;
-    height: 30px;
-    background-color: var(--color4);
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 /* ---------- Header ---------- */
 
+.present {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* min-height: 30vh; */
+  /* background-color: var(--color3); */
+  /* border: 1px solid yellow; */
+}
+
+.img-box img {
+  width: 400px;
+}
+
+.img-box p {
+    color: var(--color6);
+    border: 2px solid var(--color6);
+    padding: 5px 0;
+    width: 60%;
+}
+
+.text-box {
+    width: 50%;
+    color: white;
+    /* border: 1px solid white; */
+}
 
 /* ---------- Main ---------- */
 main {
-    /* margin-top: 30px; */
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color4);
+  /* margin-top: 30px; */
+  color: white;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--color4); */
 }
+
+.projects {
+    display: flex;
+    width: 100%;
+}
+
+.card-box {
+    width: 30%;
+}
+
+.card-info {
+    border: 2px solid white;
+}
+
+.card-info img {
+    width: 200px;
+    border-bottom: 2px solid white;
+    padding-top: 20px;
+}
+
+.card-info h3, .card-info p {
+    padding: 5px 0 5px 5px;
+}
+
+
+
+
+
+
+
 
 .center-content {
-    display: flex;
+  display: flex;
 }
 
-.professional-characteristics, .professional-path {
-    width: 49%;
+.professional-characteristics,
+.professional-path {
+  width: 49%;
 }
 
 .card {
-    border-radius: 5px 5px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    width: 100%;
-    margin-bottom: 10px;
+  border-radius: 5px 5px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .card-header {
-    padding: 20px;
-    background-color: var(--color1);
-    color: var(--color4);
-    cursor: pointer;
+  padding: 20px;
+  background-color: var(--color1);
+  color: var(--color4);
+  cursor: pointer;
 }
 
 .card-content {
-    background-color: var(--color2);
-    color: var(--color5);
-    max-height: 0;
-    transition: max-height 0.9s ease;
+  background-color: var(--color2);
+  color: var(--color5);
+  max-height: 0;
+  transition: max-height 0.9s ease;
 }
 
 .card-content p {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .card.active .card-content {
-    max-height: 200px; /* Defina um valor suficiente para o conteúdo. */
-    padding: 0 10px; /* Ajuste o padding ao expandir */
+  max-height: 200px; /* Defina um valor suficiente para o conteúdo. */
+  padding: 0 10px; /* Ajuste o padding ao expandir */
 }
 /* ---------- Main ---------- */
 
-
 /* ---------- Footer ---------- */
-.end-bg {
+/* .end-bg {
     display: flex;
     align-items: center;
-}
+} */
 /* ---------- Footer ---------- */
 
+
+.test div {
+    position: fixed;
+    z-index: 0;
+    left: 87px;
+    top: 0;
+    height: 200px;
+    border: 1px solid var(--color6);
+}
+
+.test sm-component {
+    position: fixed;
+    z-index: 0;
+    left: 70px;
+    top: 205px;
+    height: 200px;
+}
+
+.test h1 {
+    color: red;
+}

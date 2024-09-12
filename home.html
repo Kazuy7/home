@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/home.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/logo-portfolio-nobg.png"
-    />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
-  </head>
 
-  <body>
-    <background-component></background-component>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="icon" type="image/x-icon" href="asset/logo-portfolio-nobg.png" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+</head>
 
-    <header>
-      <div class="content">
-        <section class="content-nav">
-          <div class="nav-box">
-            <nav>
-              <li>
-                <ul>
-                  <a href="">PROJETOS</a>
-                </ul>
-                <ul>
-                  <a href="">CURSOS</a>
-                </ul>
-                <ul>
-                  <a href="">CURRÍCULO</a>
-                </ul>
-              </li>
-            </nav>
-          </div>
-          <div class="present-box">
-            <h1>Lucas Silva</h1>
-            <p>Sejá bem-vindo ao meu portfólio.</p>
-          </div>
-        </section>
+<body>
+  <background-component></background-component>
 
-        <section class="perfil-image">
-          <div class="img-box">
-            <img src="assets/eu-violao-nobg.png" />
-          </div>
-        </section>
+  <section class="test">
+    <div></div>
+    <sm-component></sm-component>
+  </section>
 
-        <section class="end-bg">
-          <sm-component></sm-component>
-        </section>
+  <header>
+    <section class="name-box">
+      <div class="name">
+        <h1>Lucas Silva</h1>
+      </div>
+    </section>
+
+    <section class="content-nav">
+      <nav class="nav-box">
+        <li>
+          <ul>
+            <a href=""><img src="asset/terminal-icon.png"> PROJETOS</a>
+          </ul>
+          <ul>
+            <a href=""><img src="asset/terminal-icon.png"> CERTIFICADOS</a>
+          </ul>
+        </li>
+      </nav>
+    </section>
+  </header>
+
+  <section class="present">
+    <div class="text-box">
+      <p>Sejá bem-vindo ao meu portfólio.</p>
+      <h3>Programador fullstack em progresso...</h3>
+      <!-- <button>Contato</button> -->
+    </div>
+    
+    <div class="img-box">
+      <img src="asset/um-cara.png" />
+      <p>Portfólio em desenvolvimento</p>
+    </div>
+  </section>
+
+  <main>
+    <h1><img src="asset/terminal-icon.png">PROJETOS</h1>
+    <section class="projects">
+      <div class="card-box">
+        <div class="card-info">
+          <img src="asset/linux-logo.png">
+          <h3>Título</h3>
+          <p>Descrição</p>
+        </div>
       </div>
 
-      <section class="range"></section>
-    </header>
+      <div class="card-box">
+        <div class="card-info">
+          <img src="asset/linux-logo.png">
+          <h3>Título</h3>
+          <p>Descrição</p>
+        </div>
+      </div>
 
-    <main>
+      <div class="card-box">
+        <div class="card-info">
+          <img src="asset/linux-logo.png">
+          <h3>Título</h3>
+          <p>Descrição</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- <main>
       <section class="info">
         <div>
           <h2>Info</h2>
@@ -133,14 +160,15 @@
         </section>
 
       </div>
-    </main>
+    </main> -->
 
-    <footer-component></footer-component>
+  <!-- <footer-component></footer-component> -->
 
-    <script src="js/home.js"></script>
-    <script src="js/age.js"></script>
-    <script src="components/background.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="components/social-medias.js"></script>
-  </body>
+  <script src="js/home.js"></script>
+  <script src="js/age.js"></script>
+  <script src="components/background.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="components/social-medias.js"></script>
+</body>
+
 </html>

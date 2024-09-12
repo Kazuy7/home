@@ -4,7 +4,7 @@ footerTemplate.innerHTML = `
   <style>
     footer {
     border-radius: 0 0 10px 10px;
-    background-color: #848478;
+    background-color: var(--color4);
     // margin-top: 30px;
     }
 
@@ -13,7 +13,7 @@ footerTemplate.innerHTML = `
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 40px;
     }
 
     .icon a {
