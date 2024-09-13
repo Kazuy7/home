@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <link rel="icon" type="image/x-icon" href="asset/logo-portfolio-nobg.png" />
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
 </head>
@@ -13,7 +15,7 @@
 <body>
   <background-component></background-component>
 
-  <section class="test">
+  <section class="social-medias">
     <div></div>
     <sm-component></sm-component>
   </section>
@@ -29,10 +31,11 @@
       <nav class="nav-box">
         <li>
           <ul>
-            <a href=""><img src="asset/terminal-icon.png"> PROJETOS</a>
+            <i class="terminal-icon"></i>
+            <a href=""><img src="asset/terminal-icon.png" class="terminal-icon"> PROJETOS</a>
           </ul>
           <ul>
-            <a href=""><img src="asset/terminal-icon.png"> CERTIFICADOS</a>
+            <a href=""><img src="asset/terminal-icon.png" class="terminal-icon"> CERTIFICADOS</a>
           </ul>
         </li>
       </nav>
@@ -41,7 +44,7 @@
 
   <section class="present">
     <div class="text-box">
-      <p>Sejá bem-vindo ao meu portfólio.</p>
+      <p>Seja bem-vindo ao meu portfólio.</p>
       <h3>Programador fullstack em progresso...</h3>
       <!-- <button>Contato</button> -->
     </div>
@@ -53,7 +56,9 @@
   </section>
 
   <main>
-    <h1><img src="asset/terminal-icon.png">PROJETOS</h1>
+    <div class="title-box">
+      <h1 class="title-projects"><img src="asset/html-icon.png" class="html-icon">PROJETOS</h1>
+    </div>
     <section class="projects">
       <div class="card-box">
         <div class="card-info">

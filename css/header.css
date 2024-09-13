@@ -1,0 +1,48 @@
+/* ---------- Header ---------- */
+header {
+    display: flex;
+}
+
+header a {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.name-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    width: 100%;
+    font-size: 30px;
+}
+
+.content-nav {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+li {
+    display: flex;
+    gap: 30px;
+}
+
+ul img {
+    padding-right: 10px;
+}
+
+.terminal-icon, .html-icon {
+    filter: invert(100%);
+}
+
+.nav-box {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+/* ---------- Header ---------- */

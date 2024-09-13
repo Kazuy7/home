@@ -1,0 +1,128 @@
+/* ---------- Main ---------- */
+main {
+    margin-top: 50px;
+    color: white;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--color4); */
+}
+
+.present {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.img-box img {
+    width: 400px;
+    /* border: 1px solid white; */
+}
+
+.img-box p {
+    color: var(--color6);
+    border: 2px solid var(--color6);
+    padding: 5px 0;
+    width: 400px;
+}
+
+.text-box {
+    width: 50%;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+/* ---------- Projects ---------- */
+.title-box h1 {
+    display: flex;
+}
+
+.html-icon {
+    padding-right: 10px;
+}
+
+.projects, .title-box {
+    display: flex;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+.card-box {
+    width: 30%;
+}
+
+.card-info {
+    border: 2px solid white;
+}
+
+.card-info img {
+    width: 200px;
+    border-bottom: 2px solid white;
+    padding-top: 20px;
+}
+
+.card-info h3,
+.card-info p {
+    padding: 5px 0 5px 5px;
+}
+
+
+
+
+
+
+
+
+.center-content {
+    display: flex;
+}
+
+.professional-characteristics,
+.professional-path {
+    width: 49%;
+}
+
+.card {
+    border-radius: 5px 5px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    padding: 20px;
+    background-color: var(--color1);
+    color: var(--color4);
+    cursor: pointer;
+}
+
+.card-content {
+    background-color: var(--color2);
+    color: var(--color5);
+    max-height: 0;
+    transition: max-height 0.9s ease;
+}
+
+.card-content p {
+    padding: 10px 20px;
+}
+
+.card.active .card-content {
+    max-height: 200px;
+    /* Defina um valor suficiente para o conteúdo. */
+    padding: 0 10px;
+    /* Ajuste o padding ao expandir */
+}
+
+/* ---------- Main ---------- */
